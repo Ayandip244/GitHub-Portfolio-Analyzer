@@ -9,9 +9,9 @@ Step 1: Generate a Personal Access Token<br>
 3. Give your token a name, e.g., GitHub Portfolio Analyzer.<br>
 4. Set Expiration (choose “No expiration” if you prefer).<br>
 5. Select Scopes:<br>
-\t repo (to access repository info)<br>
-\t read:user (to access user info)<br>
-\t public_repo (for public repositories)<br>
+ repo (to access repository info)<br>
+ read:user (to access user info)<br>
+ public_repo (for public repositories)<br>
 6. Click Generate token.<br>
 7. Copy the generated token — you won’t be able to see it again.<br>
 
@@ -20,7 +20,7 @@ Step 2: Add Your Token to the Project<br>
 2. Find this line near the top:<br>
 
 const headers = {<br>
-\t Authorization: "YOUR_GITHUB_TOKEN"<br>
+ Authorization: "YOUR_GITHUB_TOKEN"<br>
 };<br>
 
 3. Replace "YOUR_GITHUB_TOKEN" with your actual token<br>
