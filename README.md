@@ -1,4 +1,4 @@
-🚀 AI GitHub Portfolio Analyzer & Enhancer
+🚀 AI GitHub Portfolio Analyzer & Enhancer<br>
 Turn Your GitHub Repositories into Recruiter-Ready Proof!
 
 💡 Overview
@@ -34,16 +34,12 @@ Total Score = Mean of all metrics (out of 100)
 
 
 🖼️ Screenshots
+<img width="1900" height="866" alt="Screenshot 2026-02-13 222600" src="https://github.com/user-attachments/assets/2f098427-13d1-4394-b83a-ec0316f4921f" />
 <img width="1897" height="864" alt="Screenshot 2026-02-13 222631" src="https://github.com/user-attachments/assets/e3d0ee4e-a436-4d6d-9c25-f435ae64bad2" />
 <img width="1897" height="858" alt="Screenshot 2026-02-13 222642" src="https://github.com/user-attachments/assets/10cb4f4e-6e17-47ac-80ab-c7c518c6cfb8" />
-<img width="1900" height="866" alt="Screenshot 2026-02-13 222600" src="https://github.com/user-attachments/assets/2f098427-13d1-4394-b83a-ec0316f4921f" />
-
-
-Circular score meter with recruiter evaluation
-
-🚀 How to Use
 
 git clone https://github.com/Ayandip244/GitHub-Portfolio-Analyzer.git
+🚀 How to Use
 
 Open index.html in a browser.
 Enter your GitHub username and click Analyze.
