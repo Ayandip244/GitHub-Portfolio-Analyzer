@@ -43,7 +43,7 @@ Circular score meter with recruiter evaluation
 
 🚀 How to Use
 
-git clone https://github.com/<your-username>/AI-GitHub-Portfolio-Analyzer.git
+git clone https://github.com/Ayandip244/GitHub-Portfolio-Analyzer.git
 
 Open index.html in a browser.
 Enter your GitHub username and click Analyze.
