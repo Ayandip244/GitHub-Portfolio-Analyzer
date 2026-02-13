@@ -1,0 +1,194 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: 0.4s;
+  color: #033; /* default text color */
+  background: #e0f7fa; /* default light theme background */
+  background-image: radial-gradient(circle at 20% 30%, #ffffff40 0%, transparent 60%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* THEME SELECTOR (TOP RIGHT)*/
+.theme-selector {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+#themeOptions {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  grid-gap: 5px;
+  margin-top: 5px;
+}
+
+.theme-swatch {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.theme-swatch:hover {
+  transform: scale(1.2);
+}
+
+/* INPUT & BUTTON */
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00bfa6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #ffffff40;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #00ff99;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* SCORE CIRCLE */
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  transition: 1s;
+}
+
+.inner {
+  width: 140px;
+  height: 140px;
+  background: #00ff99;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* GLASS CARDS */
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* METRIC BREAKDOWN */
+.metric-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.metric-card:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mini-bar {
+  flex: 1;
+  margin: 0 10px;
+  height: 8px;
+  background: #ffffff50;
+  border-radius: 5px;
+}
+
+.mini-fill {
+  height: 100%;
+  background: #00ff99;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* FEEDBACK LINES */
+.line {
+  margin: 8px 0;
+  text-align: left;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
