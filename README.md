@@ -20,7 +20,7 @@ Step 2: Add Your Token to the Project<br>
 2. Find this line near the top:<br>
 
 const headers = {<br>
- Authorization: "YOUR_GITHUB_TOKEN"<br>
+  Authorization: "YOUR_GITHUB_TOKEN"<br>
 };<br>
 
 3. Replace "YOUR_GITHUB_TOKEN" with your actual token<br>
