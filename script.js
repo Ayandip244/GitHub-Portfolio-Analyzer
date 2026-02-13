@@ -1,8 +1,7 @@
 const headers = {
-  Authorization: ""
+  Authorization: "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" /*use Your own access tokens*/
 };
 
-// 40 themes: 20 light + 20 dark
 const themes = [
   // 20 light themes
   {bg:"#e0f7fa",circle:"#00bcd4",glass:"#ffffff33",btn:"#00acc1"},
@@ -198,4 +197,5 @@ async function stage(label,percent){
   document.getElementById("progressFill").style.width=percent+"%";
   document.getElementById("progressPercent").innerText=percent+"%";
   await new Promise(res=>setTimeout(res,700));
+
 }
