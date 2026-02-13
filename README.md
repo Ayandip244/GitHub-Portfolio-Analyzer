@@ -1,6 +1,30 @@
 🚀 AI GitHub Portfolio Analyzer & Enhancer<br>
 Turn Your GitHub Repositories into Recruiter-Ready Proof!<br>
 
+🔑 Using Your Own GitHub Personal Access Token (Required)<br>
+To fully enable the analyzer (especially for GraphQL contributions and API calls), you need a GitHub Personal Access Token (PAT).<br>
+Step 1: Generate a Personal Access Token<br>
+1. Go to GitHub Settings → Developer settings → Personal Access Tokens → Tokens (classic).<br>
+2. Click Generate new token → Tokens (classic).<br>
+3. Give your token a name, e.g., GitHub Portfolio Analyzer.<br>
+4. Set Expiration (choose “No expiration” if you prefer).<br>
+5. Select Scopes:<br>
+\t repo (to access repository info)<br>
+\t read:user (to access user info)<br>
+\t public_repo (for public repositories)<br>
+6. Click Generate token.<br>
+7. Copy the generated token — you won’t be able to see it again.<br>
+
+Step 2: Add Your Token to the Project<br>
+1. Open script.js in your code editor.<br>
+2. Find this line near the top:<br>
+
+const headers = {<br>
+\t Authorization: "YOUR_GITHUB_TOKEN"<br>
+};<br>
+
+3. Replace "YOUR_GITHUB_TOKEN" with your actual token<br>
+
 💡 Overview<br>
 Many students and early-career developers struggle to showcase their skills effectively on GitHub. Incomplete READMEs, inconsistent commits, and poorly structured repositories make it difficult for recruiters to evaluate true potential.<br>
 This tool analyzes your GitHub profile and provides:<br>
