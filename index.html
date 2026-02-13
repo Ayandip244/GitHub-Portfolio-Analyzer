@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI GitHub Portfolio Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🚀 AI GitHub Portfolio Analyzer</h1>
+  <p class="subtitle">Recruiter-Grade AI Evaluation • Score out of 100</p>
+
+  <!-- Theme Selector -->
+  <div class="theme-selector">
+    <label>🎨 Theme:</label>
+    <div id="themeOptions"></div>
+  </div>
+
+  <!-- Input Section -->
+  <div class="input-section">
+    <input id="username" placeholder="Enter GitHub username (e.g., torvalds)">
+    <button onclick="analyze()">Analyze</button>
+  </div>
+
+  <!-- Progress -->
+  <div id="progressBox" class="glass hidden">
+    <div id="stageLabel">Initializing...</div>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+    <div id="progressPercent">0%</div>
+  </div>
+
+  <!-- Score Section -->
+  <div id="scoreSection" class="hidden">
+    <div class="score-card glass">
+      <div class="circle">
+        <div class="inner">
+          <span id="scoreValue">0</span>
+          <small>/100</small>
+        </div>
+      </div>
+      <div id="verdict"></div>
+    </div>
+
+    <div class="breakdown glass">
+      <h3>📊 Detailed Breakdown (Each out of 100)</h3>
+      <div id="scoreBreakdown"></div>
+    </div>
+  </div>
+
+  <!-- Recruiter Evaluation -->
+  <div id="feedbackSection" class="glass hidden">
+    <h2>📌 Recruiter Evaluation</h2>
+    <div id="feedbackContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
