@@ -1,5 +1,5 @@
 const headers = {
-  Authorization: "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" /*use Your own access tokens*/
+  Authorization: "use access tokens"
 };
 
 const themes = [
